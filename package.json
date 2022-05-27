@@ -1,0 +1,25 @@
+{
+  "name": "imobiliare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass --watch scss/index.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcuGMA/imobiliare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcuGMA/imobiliare/issues"
+  },
+  "homepage": "https://github.com/MarcuGMA/imobiliare#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "swiper": "^8.1.5"
+  }
+}
