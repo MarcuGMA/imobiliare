@@ -2,9 +2,23 @@
   width: 100%;
   min-height: 80vh;
 
+  &.recomandation {
+    // stiluri pentru al 2-lea swiper/ elementele intere
+  }
+
   .homeswiper__img {
     width: 100%;
     min-height: 60vh;
+  }
+
+  &-button {
+    &-next {
+      background-color: red;
+    }
+
+    &-prev {
+      background-color: green;
+    }
   }
 
 }

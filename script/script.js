@@ -10,3 +10,15 @@ const swiper = new Swiper('#swiper__wrapper', {
   },
 });
 
+const swiper2 = new Swiper('#swiper__wrapper2', {
+  // Optional parameters
+  loop: true,
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
