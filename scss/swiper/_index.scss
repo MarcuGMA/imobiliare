@@ -1,12 +1,43 @@
 .swiper {
   width: 100%;
   min-height: 80vh;
-  background-color: aqua;
 
+  &-recomandation {
+    &-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+      h3 {
+        position: relative;
+        top: 50px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 35px;
+        z-index: 11;
+        color:$red-base;
+      }
+    }
+  }
 
-  // &.recomandation {
-  //   // stiluri pentru al 2-lea swiper/ elementele intere
-  // }
+  &.recomandation {
+    padding-top: 100px;
+    position: relative;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 40px;
+    }
+
+    .swiper-button-prev {
+      left: calc(50% - 170px);
+    }
+    
+    .swiper-button-next {
+      right: calc(50% - 170px);
+    }
+  }
 
   .homeswiper__img {
     width: 100%;
@@ -14,14 +45,33 @@
   }
 
   &-button {
+    
     &-next {
-      color: white;
+      width: 60px !important;
+      height: 60px !important;
+
+      &::after {
+        content: "" !important;
+        width: 35px;
+        height: 35px;
+        border-right: 5px solid white;
+        border-top: 5px solid white;
+        transform: rotate(45deg);
+      }
     }
 
-    &-prev::after,&-next::after {
-      color: white;
-      width: 15px;
-      line-height: 4;
+    &-prev {
+      width: 60px !important;
+      height: 60px !important;
+
+      &::after {
+        content: "" !important;
+        width: 35px;
+        height: 35px;
+        border-right: 5px solid white;
+        border-top: 5px solid white;
+        transform: rotate(-135deg);
+      }
     }
   }
 
