@@ -1,10 +1,12 @@
 .swiper {
   width: 100%;
   min-height: 80vh;
+  background-color: aqua;
 
-  &.recomandation {
-    // stiluri pentru al 2-lea swiper/ elementele intere
-  }
+
+  // &.recomandation {
+  //   // stiluri pentru al 2-lea swiper/ elementele intere
+  // }
 
   .homeswiper__img {
     width: 100%;
@@ -13,11 +15,13 @@
 
   &-button {
     &-next {
-      background-color: red;
+      color: white;
     }
 
-    &-prev {
-      background-color: green;
+    &-prev::after,&-next::after {
+      color: white;
+      width: 15px;
+      line-height: 4;
     }
   }
 
