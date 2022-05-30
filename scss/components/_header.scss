@@ -1,7 +1,7 @@
 .menu {
   height: 60px;
   width: 100%;
-  background-color: #B02226;
+  background-color: $red-base;
   display: flex;
   justify-content: space-between;
   padding: 0px 20px 0px;
@@ -37,7 +37,7 @@
         position: absolute;
         z-index: 2;
         list-style: none;
-        top: calc(9%);
+        top: 60px;
         opacity: 0;
         pointer-events: none;
         transition: all 0.3s ease;
