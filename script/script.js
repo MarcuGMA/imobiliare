@@ -18,8 +18,8 @@ const swiper2 = new Swiper('#swiper__wrapper2', {
   spaceBetween: 30,
   // Navigation arrows
   navigation: {
-    nextEl: '#swiper-wrapper-next',
-    prevEl: '#swiper-wrapper-prev',
+    nextEl: '#swiper-wrapper-next1',
+    prevEl: '#swiper-wrapper-prev1',
   },
 });
 
