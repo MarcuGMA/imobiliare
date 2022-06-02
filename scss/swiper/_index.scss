@@ -28,13 +28,14 @@
     position: relative;
 
 
-    .swiper-button-prev,
-    .swiper-button-next {
+    .info-prev,
+    .info-next {
       position: absolute;
       top: 40px;
+      background-color: red;
     }
 
-    .swiper-button-prev {
+    .info-prev {
       position:absolute;
       left: calc(50% - 170px);
       width: 50px !important;
@@ -50,7 +51,7 @@
       }
     }
     
-    .swiper-button-next {
+    .info-next {
       position:absolute;  
       right: calc(50% - 170px);
       width: 60px !important;
