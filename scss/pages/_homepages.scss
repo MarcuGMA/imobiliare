@@ -34,32 +34,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
-    .home__button {
-      position: absolute;
-      right: 950px;
-      top: -75px;
-      opacity: 1;
-      width: 150px;
-      height: 40px;
-      background: white;
-      border: none;
-      border-radius: 25px;
-      font-family: $roboto;
-      font-size: 18px;
-      color: $red-base;
-      font-weight: 600;
-      transition: .2s all ease-in;
-      cursor: pointer;
-
-      &:hover {
-        transform: scale(1.05);
-      }
     }
     #home__button-arent {
        right: 1150px;
     }
-
   }
   }
 
@@ -86,4 +64,3 @@
     height: 250px;
     background-color: #fff;
   }
-}
