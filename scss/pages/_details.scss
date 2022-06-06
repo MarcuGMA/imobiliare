@@ -1,0 +1,169 @@
+.details {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  
+  &__top {
+    width: 100%;
+    height: 60%;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    &-img {
+      width: 35%;
+      height: 85%;
+      
+      h4 {
+        padding: 5px;
+        font-size: $very-large;
+        font-family: $roboto;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      } 
+    }
+
+    &-spec {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h4 {
+        text-align: center;
+        font-size: $very-large;
+        font-family: $roboto;
+      }
+
+      .specification {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray-base;
+
+        margin: 10px;
+        
+
+        p {
+          padding: 10px;
+          margin-left: 30px;
+          font-size: $normal;
+          font-family: $roboto;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    height: 40%;
+    margin: 50px; 
+
+    h4 {
+      width: 70%;
+      padding-bottom: 10px ;
+      margin-left: 50px;
+      font-size: $very-large;
+      font-family: $roboto;
+      border-bottom: 1px solid $gray-base;
+    }
+
+    p {
+      
+      margin:30px 50px;
+      font-size: $small;
+      font-family: $roboto;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 70vh;
+    background-color: $bg-color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    &-message {
+      width: 25%;
+      height: 70%;
+      margin: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+
+      .input__message {
+        width: 100%;
+        height: 10%;
+        border-radius: 30px;
+        border: 1px solid #676667;
+        color: #676667;
+        font-size: $normal;
+        font-family: $roboto;
+        padding-left: 15px;
+        
+        &:focus {
+          outline: none;
+        }
+
+        &-big {
+          width: 100%;
+          height: 45%;
+          border-radius: 30px;
+          border: 1px solid #676667;
+          color: #676667;
+          font-size: $normal;
+          font-family: $roboto;
+          padding-left: 15px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            display: flex;
+            text-align: start;
+          }
+        }
+
+      }
+    }
+
+    &-telephone {
+      width: 25%;
+      height: 50%;
+      margin: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+
+      .input__message-big {
+        width: 100%;
+        height: 55%;
+        border-radius: 30px;
+        border: 1px solid #676667;
+        color: #676667;
+        font-size: $normal;
+        font-family: $roboto;
+        padding-left: 15px;
+      }     
+    }
+  }
+}
+
+

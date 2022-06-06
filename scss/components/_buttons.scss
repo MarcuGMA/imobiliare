@@ -137,3 +137,25 @@
   margin: 1px;
   cursor: pointer;
 } 
+
+.item__input-button {
+  width: 200px;
+  height: 60px;
+  margin: 10px;
+  color: white;
+  background-color: $red-base;
+  border-radius: 20px;
+  font-family: $roboto;
+  border: none;
+  font-size: $normal;
+  margin-left: 50px;
+  transition: 0.4s all ease;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $red-base;
+    background-color: #fff;
+    color: $red-base;
+    box-shadow: 5px 5px 0px 0px rgba(176,34,38,1);
+  } 
+}
