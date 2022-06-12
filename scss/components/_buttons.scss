@@ -10,6 +10,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: 0.15s all ease-in;
+
+  &-open {
+    border-radius: 20px 20px 0px 0px;
+  }
 }
 
 .searchBar__button {
@@ -39,7 +45,8 @@
   border-radius: 15px;
   padding: 5px;
   z-index: 1;
-  
+  cursor: pointer;
+
   &-lineAfter {
     border: 1px solid $gray-base;
     color: $gray-base;
@@ -48,6 +55,7 @@
     border-radius: 15px;
     padding: 5px;
     position: relative;
+    cursor: pointer;
     
     &:after {
       content: "";
@@ -68,6 +76,7 @@
     font-family: $roboto;
     font-weight: 600;
     font-size: $normal;
+    cursor: pointer;
   }
 
   &-left {

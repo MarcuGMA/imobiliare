@@ -23,3 +23,16 @@ const swiper2 = new Swiper('#swiper__wrapper2', {
   },
 });
 
+
+let filter_button = document.querySelector(".filter__button");
+let filter_option = document.querySelector(".filter__option");
+
+filter_button.addEventListener('click', click__buttonFilter);
+
+function click__buttonFilter() {
+  filter_button.classList.toggle("filter__button-open");
+  filter_option.classList.toggle("filter__option-open");
+}
+
+
+

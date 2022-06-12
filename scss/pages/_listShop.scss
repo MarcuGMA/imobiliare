@@ -47,6 +47,15 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.15s all ease;
+
+      &-open {
+        opacity: 1;
+        pointer-events: all;
+      }
+
 
       .option {
         width: 100%;
@@ -62,6 +71,7 @@
           justify-content: center;
           width: 100px;
           height: 25px;
+          cursor: pointer;
         }
 
         p {
