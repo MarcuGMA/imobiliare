@@ -19,6 +19,7 @@
         color:$red-base;
       }
     }
+
   }
 
   &.recomandation {
@@ -31,39 +32,38 @@
     .info-prev,
     .info-next {
       position: absolute;
-      top: 40px;
+      top: 17px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-top: 3px solid $red-base;
+        border-right: 3px solid $red-base;
+
+      }
     }
 
     .info-prev {
-      position:absolute;
       left: calc(50% - 170px);
-      width: 50px !important;
-      height: 50px !important;
 
       &::after {
-        content: "" !important;
-        width: 15px ;
-        height: 15px;
-        border-right: 5px solid $red-base;
-        border-top: 5px solid $red-base;
         transform: rotate(-135deg);
       }
     }
     
     .info-next {
-      position:absolute;  
       right: calc(50% - 170px);
-      width: 60px !important;
-      height: 60px !important;
 
       &::after {
-        content: "" !important;
-        width: 15px ;
-        height: 15px;
-        border-right: 5px solid $red-base;
-        border-top: 5px solid $red-base;
         transform: rotate(45deg);
       }
+
     }
   }
 
@@ -96,7 +96,6 @@
   }
 
   &-button {
-
     &-next, 
     &-prev {
       width: 60px;
