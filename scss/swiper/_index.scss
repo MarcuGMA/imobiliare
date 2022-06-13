@@ -96,30 +96,37 @@
   }
 
   &-button {
-    
-    &-next {
-      width: 60px !important;
-      height: 60px !important;
-      &::after {
-        content: "" !important;
+
+    &-next, 
+    &-prev {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      &:after {
+        content: "";
         width: 35px;
         height: 35px;
         border-right: 5px solid white;
         border-top: 5px solid white;
+      }
+    }
+
+    &-next {
+      right: 30px;
+
+      &::after {
         transform: rotate(45deg);
       }
     }
 
     &-prev {
-      width: 60px !important;
-      height: 60px !important;
+      left: 30px;
 
       &::after {
-        content: "" !important;
-        width: 35px;
-        height: 35px;
-        border-right: 5px solid white;
-        border-top: 5px solid white;
         transform: rotate(-135deg);
       }
     }
