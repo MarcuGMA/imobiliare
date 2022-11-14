@@ -168,3 +168,17 @@
     box-shadow: 5px 5px 0px 0px rgba(176,34,38,1);
   } 
 }
+
+.hamburger {
+  display:  none;
+  cursor: pointer;
+
+  .bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease-in;
+    background-color: #fff;   
+  }
+}
