@@ -7,21 +7,26 @@ const swiper = new Swiper('#swiper__wrapper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
+  }
 });
 
 const swiper2 = new Swiper('#swiper__wrapper2', {
   // Optional parameters
   loop: true,
-
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   // Navigation arrows
   navigation: {
     nextEl: '.info-next',
     prevEl: '.info-prev',
   },
+  breakpoints: {
+    550: {
+      slidesPerView: 3,
+    }
+  }
 });
+
 
 
 let filter_button = document.querySelector(".filter__button");
@@ -35,4 +40,33 @@ function click__buttonFilter() {
 }
 
 
+// Responsive menu for max width 500px
+
+const hamburger = document.querySelector(".hamburger");
+const menu__list = document.querySelector(".menu__list");
+
+const linksShop = document.querySelectorAll(".link__shop");
+
+if (hamburger) {
+  hamburger.addEventListener("click", menu_change);
+}
+
+[...linksShop].forEach((item) => {
+  item.addEventListener("click", menuToggle);
+});
+
+function menu_change(){
+  hamburger.classList.toggle("active");
+  menu__list.classList.toggle("active");
+}
+
+function menuToggle (clickEvent) {
+  if (window.outerWidth > 550 ) {
+    return;
+  }
+
+  clickEvent.preventDefault();
+  console.log(clickEvent);
+  clickEvent.target.parentNode.classList.toggle('active');
+}
 
